@@ -1,0 +1,11 @@
+{
+  "name": "project_RunningHeroes",
+  "main": "index.js",
+  "author": "Jerome Drago",
+  "dependencies": {
+    "express" : "latest",
+    "mongoose" : "3.8.0",
+    "body-parser": "latest",
+    "method-override": "~2.0.2"
+  }
+}

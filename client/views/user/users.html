@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<div>
+    <h3>Search users near this adress</h3>
+    <form ng-submit="usr.getCoordinates()">
+    <input id="address" type="text" class="form-control" value="55" placeholder="Enter address here" data-ng-model="usr.adressUser" /><br>
+    <button type="submit" class="btn btn-default">Get coordinates</button>
+    </form>
+</div><br>
+
+<form ng-submit="usr.getUsers()">
+    <div class="form-group">
+        <label for="latitude">Latitude</label>
+        <input type="number" step="any" class="form-control" value=55 id="latitude" placeholder="latitude" data-ng-model="usr.latitude">
+    </div>
+    <div class="form-group">
+    <label for="longitude">Longitude</label>
+    <input type="text"  step="any" class="form-control" id="longitude" placeholder="longitude" ng-model="usr.longitude">
+</div>
+    <button type="submit" class="btn btn-default">Send</button>
+</form><br>
+
+    <div ng-repeat="user in usr.users">
+        <div class="alert alert-success" role="alert">{{user.email}}<button id="sendmail" type="submit" class="btn btn-success">Send invitation</button></div>
+    </div>
+</body>
+</html>

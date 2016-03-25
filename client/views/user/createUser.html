@@ -1,0 +1,30 @@
+<div>
+    <form ng-submit="usr.getCoordinates()">
+        <input id="address" type="text" class="form-control" value="55" placeholder="Enter address here" data-ng-model="usr.adressUser" /><br>
+        <button type="submit" class="btn btn-default">Get coordinates</button>
+    </form>
+</div><br>
+
+<form ng-submit="usr.sendUser()">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Email" ng-model="usr.newusr.email">
+    </div>
+
+    <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country" placeholder="country" ng-model="usr.newusr.locations.label">
+    </div>
+
+    <div class="form-group">
+        <label for="longitude">Country</label>
+        <input type="number" step="any" class="form-control" id="longitude" placeholder="longitude" ng-model="usr.newusr.locations.lng">
+    </div>
+
+    <div class="form-group">
+        <label for="latitude">Country</label>
+        <input type="text" step="any" class="form-control" id="latitude" placeholder="latitude" ng-model="usr.newusr.locations.lat">
+    </div>
+
+    <button type="submit" class="btn btn-default">Create</button>
+</form>
