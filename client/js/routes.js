@@ -10,8 +10,8 @@ angular.module('app')
                 controller: 'UserController as usr'
             })
             .otherwise({
-                templateUrl: 'views/home/home.html',
-                controller: 'HomeController as home'
+                templateUrl: 'views/user/users.html',
+                controller: 'UserController as usr'
             })
 
         $locationProvider.html5Mode(true);
